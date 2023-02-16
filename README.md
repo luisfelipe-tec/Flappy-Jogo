@@ -13,7 +13,7 @@ Desenvolvido durante o curso "Web Moderno" da plataforma Udemy.
 
 <h4 align="center">
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)] [![siga-me](https://img.shields.io/github/followers/luisfelipe-tec?label=Siga-me&style=social)]()
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)]
 
 Esse projeto foi desenvolvido utilizando JavaScript, HTML5 e CSS3, onde o HTML tem seu papel apenas como base index e o JavaScript cuida de toda lógica, manipulação e inserção de dados. Além disso, nesse projeto é tratado o bloqueio de seleção do conteúdo com CSS.
 </h4>
