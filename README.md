@@ -1,7 +1,8 @@
 <h1 align="center">
 Flappy Bird
 </h1>
-![flappy1](https://user-images.githubusercontent.com/67664122/219508823-b4b43dce-3e26-47ef-ba78-792bef7ab1cc.png)
+
+![flappy1](https://user-images.githubusercontent.com/67664122/219508877-bea2faf1-b29a-4ca2-91ad-f1e527625d28.png)
 
 ### Jogue o jogo
 
