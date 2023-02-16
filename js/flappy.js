@@ -85,6 +85,8 @@ function Passaro(alturaJogo) {
     window.onkeydown = e => voando = true
     window.onkeyup = e => voando = false
 
+
+
     this.animar = () => {
         const novoY = this.getY() + (voando ? 8 : -5)
         const alturaMaxima = alturaJogo - this.elemento.clientHeight
@@ -111,16 +113,17 @@ function Progresso() {
     this.atualizarPontos(0)
 }
 
-// const barreiras = new Barreiras(700, 1200, 200, 400)
-// const passaro = new Passaro(700)
-// const areaDoJogo = document.querySelector('[wm-flappy]')
-// areaDoJogo.appendChild(passaro.elemento)
-// areaDoJogo.appendChild(new Progresso().elemento)
-// barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
-// setInterval(() => {
-//     barreiras.animar()
-//     passaro.animar()
-// }, 20)
+
+function Play() {
+    this.elemento = novoElemento('button', '🔄')
+    this.elemento.innerHTML = '🔄RECOMECAR'
+    this.elemento.onclick = () => {
+        location.reload()
+    }
+    this.elemento.ontouchend = () => {
+        location.reload()
+    }
+}
 
 function estaoSobrepostos(elementoA, elementoB) {
     const a = elementoA.getBoundingClientRect()
@@ -155,12 +158,14 @@ function FlappyBird() {
     const largura = areaDoJogo.clientWidth
 
     const progresso = new Progresso()
+    const play = new Play()
     const barreiras = new Barreiras(altura, largura, 200, 400,
         () => progresso.atualizarPontos(++pontos))
     const passaro = new Passaro(altura)
 
     areaDoJogo.appendChild(progresso.elemento)
     areaDoJogo.appendChild(passaro.elemento)
+    areaDoJogo.appendChild(play.elemento)
     barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
 
     this.start = () => {

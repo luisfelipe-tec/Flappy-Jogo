@@ -4,7 +4,8 @@
 }
 
 * {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 html {
@@ -23,5 +24,10 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100%;
+}
+
+footer{
+    margin-bottom: .5%;
+    margin-top:.5%;
 }
 
