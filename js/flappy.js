@@ -84,6 +84,8 @@ function Passaro(alturaJogo) {
 
     window.onkeydown = e => voando = true
     window.onkeyup = e => voando = false
+    window.ontouchstart = e => voando = true
+    window.ontouchend = e => voando = false
 
 
 
